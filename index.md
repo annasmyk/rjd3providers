@@ -1,19 +1,20 @@
 # {rjd3providers}
 
-[![R-CMD-check](https://github.com/rjdverse/rjd3providers/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rjdverse/rjd3providers/actions/workflows/R-CMD-check.yaml)
-[![lint](https://github.com/rjdverse/rjd3providers/actions/workflows/lint.yaml/badge.svg)](https://github.com/rjdverse/rjd3providers/actions/workflows/lint.yaml)
+[![R-CMD-check](https://github.com/rjdverse/rjd3providers/actions/workflows/R-CMD-check.yml/badge.svg)](https://github.com/rjdverse/rjd3providers/actions/workflows/R-CMD-check.yml)
+[![lint](https://github.com/rjdverse/rjd3providers/actions/workflows/lint.yml/badge.svg)](https://github.com/rjdverse/rjd3providers/actions/workflows/lint.yml)
 
 [![GH Pages
-built](https://github.com/rjdverse/rjd3providers/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/rjdverse/rjd3providers/actions/workflows/pkgdown.yaml)
+built](https://github.com/rjdverse/rjd3providers/actions/workflows/pkgdown.yml/badge.svg)](https://github.com/rjdverse/rjd3providers/actions/workflows/pkgdown.yml)
 
 ## Overview
 
-**{rjd3providers}** provides tools to explore the default time series
-providers (.xslx, .csv, .txt and .xml files) for JDemetra+ v3.x
-Graphical User Interface. It allows to manipulate raw series files. For
-example, using this R package, you will be able to:
+**{rjd3providers}** contains functions to explore and modify the
+parameters of JDemetra 3.x time series providers (.xslx, .csv, .txt and
+.xml files) used in the Graphical User Interface. It allows to
+manipulate raw series files. For example, using this R package, you will
+be able to:
 
-- change the **path** of the raw data
+- change the **path** of raw data
 - change the file **type**
 - manipulate **monikers**
 - change file **read properties**
@@ -25,7 +26,16 @@ example, using this R package, you will be able to:
 
 Running rjd3 packages requires **Java 21 or higher**. How to set up such
 a configuration in R is explained
-[here](https://jdemetra-new-documentation.netlify.app/#Rconfig)
+[here](https://doc.jdemetra.org/#Rconfig)
+
+**🎉 {rjd3providers} is now available on CRAN! 🎉**
+
+To install it, just launch the following command line:
+
+``` r
+
+install.packages("rjd3providers")
+```
 
 ### Latest release
 
@@ -34,6 +44,7 @@ To get the current stable version (from the latest release):
 - From GitHub:
 
 ``` r
+
 # install.packages("remotes")
 remotes::install_github("rjdverse/rjd3providers@*release", build_vignettes = TRUE)
 ```
@@ -41,6 +52,7 @@ remotes::install_github("rjdverse/rjd3providers@*release", build_vignettes = TRU
 - From [r-universe](https://rjdverse.r-universe.dev/rjd3providers):
 
 ``` r
+
 install.packages("rjd3providers", repos = c("https://rjdverse.r-universe.dev", "https://cloud.r-project.org"))
 ```
 
@@ -50,6 +62,7 @@ You can install the development version of **{rjd3providers}** from
 [GitHub](https://github.com/) with:
 
 ``` r
+
 # install.packages("remotes")
 remotes::install_github("rjdverse/rjd3providers")
 ```
@@ -59,6 +72,7 @@ remotes::install_github("rjdverse/rjd3providers")
 ### Generate all the TS information
 
 ``` r
+
 library("rjd3providers")
 #> my Java class path: [1] "rjd3providers"
 #> 
@@ -223,4 +237,4 @@ should be added or updated.
 
 The code of this project is licensed under the [European Union Public
 Licence
-(EUPL)](https://interoperable-europe.ec.europa.eu:443/collection/eupl/eupl-text-eupl-12).
+(EUPL)](https://interoperable-europe.ec.europa.eu/collection/eupl/eupl-text-eupl-12).
